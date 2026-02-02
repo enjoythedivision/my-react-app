@@ -9,7 +9,7 @@ const Card = ({ title, rating, isCool }) => {
   return (
     <div className="card">
       <h2>{title}</h2>
-      <button onClick={() => setHasLiked(true)}>
+      <button onClick={() => setHasLiked(!hasLiked)}>
         {hasLiked ? "Liked!" : "Like"}
       </button>
     </div>
